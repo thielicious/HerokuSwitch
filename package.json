@@ -1,8 +1,8 @@
 {
-  "name": "heroku-undyno",
+  "name": "undyno.js",
   "version": "1.0.0",
   "description": "Activates/Deactivates an app running on the PaaS Heroku without wasting free dynos in one go.",
-  "main": "un-dyno.js",
+  "main": "heroku-undyno.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
