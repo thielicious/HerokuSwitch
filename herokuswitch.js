@@ -73,7 +73,6 @@ if ((cfg.app || cfg.resource) == '') {
 			}
 		})
 	} catch(e) {
-		console.error('Heroku CLI is required. Type "npm i -g heroku" to install.');
-		return
+		console.error('Heroku CLI is required. Type "npm i -g heroku" to install.')
 	}
 }
