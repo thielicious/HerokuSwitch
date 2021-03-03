@@ -1,5 +1,5 @@
 # What is it about<br>
-Activates/Deactivates the app running on the PaaS Heroku in one go. 
+Activates/Deactivates an app running on the PaaS platform Heroku without wasting free dynos in one go. Less to write more to achieve. 
 
 # Installation<br>
 Node package manager [NPM](https://nodejs.org/en/download/) is required.
