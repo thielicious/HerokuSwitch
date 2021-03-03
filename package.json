@@ -1,0 +1,14 @@
+{
+  "name": "un-dyno",
+  "version": "1.0.0",
+  "description": "Activates/Deactivates an app running on the PaaS Heroku without wasting free dynos in one go.",
+  "main": "un-dyno.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "heroku", "dyno"
+  ],
+  "author": "Thielicious",
+  "license": "MIT"
+}
