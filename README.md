@@ -17,7 +17,7 @@ const undyno = new Heroku({
 
 undyno.exec() // executes the code together with the settings made above
 ```
-Just use the [demo](https://github.com/thielicious/HerokuSwitch/demo.js) file and configure.
+Just use the [demo](https://github.com/thielicious/unDyno/blob/main/demo.js) file and configure.
 
 # USAGE<br>
 Assuming you created a file called `undyno.js` in the root folder of your project:<br>
