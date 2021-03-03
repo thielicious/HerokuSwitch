@@ -1,8 +1,8 @@
-### What it is
+### WHAT IT IS
 
 Activates/Deactivates an app running on the PaaS Heroku without wasting free dynos in one go. 
 
-### Installation
+### INSTALLATION
 
 1. HerokuSwitch is working with the official [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli), install it: `npm i -g heroku`
 2. Then install HerokuSwitch using NPM: `npm i herokuswitch --save`
