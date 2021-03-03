@@ -1,8 +1,8 @@
-# What is it about
+### What it is
 
-Activates/Deactivates the app running on PaaS Heroku in one go. 
+Activates/Deactivates an app running on the PaaS Heroku without wasting free dynos in one go. 
 
-# Installation
+### Installation
 
 1. HerokuSwitch is working with the official [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli), install it: `npm i -g heroku`
 2. Then install HerokuSwitch using NPM: `npm i herokuswitch --save`
@@ -16,34 +16,35 @@ const cfg = {
 }
 ```
 
-# USAGE
+### USAGE
 
-Open the terminal. The syntax is: 
+Open the terminal. The syntax is: <br>
 `node herokuswitch -<option>`
 
-Choose an option to execute it.
+Choose an option to execute it.<br>
 Example: `node herokuswitch -off`
 
-This turns off the app completely by turning on maintenance mode and deactivates the process resource type in one go.
+This turns off the app completely by turning on maintenance mode and deactivates the process resource type in one go. It's less to type and faster. You might as well create a .bat file, insert the command and the only thing you need to do is to click it.
 
-# OPTIONS
 
-`-off` 
+### OPTIONS
+
+`-off`<br>
 Turns off the app on Heroku by turning on maintenance mode and process resource type off.
 
-`-on`
+`-on`<br>
 Turns the app on again by turning the maintenance mode off and enables the specific resource type defined in the configuration, see installation.
 
-`-log`
+`-log`<br>
 Displays the log of the app in a new terminal window.
 
-`-restart`
+`-restart`<br>
 Restarts the app on Heroku.
 
-`-dynos`
+`-dynos`<br>
 Looks up the remaining dynos and used up resources.
 
-`-update`
+`-update`<br>
 Updates the Heroku CLI (Heroku module required)
 
 -----
