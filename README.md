@@ -1,5 +1,5 @@
 ### WHAT IT IS<br>
-Activates/Deactivates the app running on the PaaS Heroku in one go. 
+Activates/Deactivates an app that is deployed on the PaaS platform Heroku without wasting any dynos in one go. Less to write, faster to accomplish.
 
 ### INSTALLATION<br>
 Node package manager [NPM](https://nodejs.org/en/download/) is required.
@@ -36,7 +36,7 @@ const undyno = new HerokuUndyno(
 	resource: <'Worker' or 'web'>
 })
 ```
-*(optional)* The arguments configure the options upon creating a new instance. Configures the options used for the Heroku app. For `app` use the name of your deployed Heroku app. For `resource` chose either `Worker` or `web` for the dyno process resource. You may leave this blank and use `.config()` later on instead.
+**(optional)** The arguments configure the options upon creating a new instance. Configures the options used for the Heroku app. For `app` use the name of your deployed Heroku app. For `resource` chose either `Worker` or `web` for the dyno process resource. You may leave this blank and use `.config()` later on instead.
 
 ```
 undyno.config({
@@ -44,10 +44,10 @@ undyno.config({
 	resource: <'Worker' or 'web'>
 })
 ```
-*(optional)* Use this method instead if you haven't set the options yet.
+**(optional)** Use this method instead if you haven't set the options yet.
 
 `undyno.exec()`<br>
-*(required)* This method simply executes the code together with the configured options.
+**(required)** This method simply executes the code together with the configured options.
 
 ### OPTIONS<br>
 `-off`<br>
