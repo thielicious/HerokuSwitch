@@ -68,6 +68,9 @@ Looks up the remaining dynos and used up resources.
 `-update`<br>
 Updates the Heroku CLI (Heroku module required)
 
+<br>
+<br>
+
 -----
 
 ##### If you encounter any errors, don't hesitate to open up an [issue](https://github.com/thielicious/HerokuSwitch/issues), thank you!
