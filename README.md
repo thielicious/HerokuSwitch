@@ -1,7 +1,7 @@
-### What is it about<br>
+### WHAT IT IS<br>
 Activates/Deactivates the app running on the PaaS Heroku in one go. 
 
-### Installation<br>
+### INSTALLATION<br>
 Node package manager [NPM](https://nodejs.org/en/download/) is required.
 
 1. undyno.js is working with the official [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli), install it: `npm i -g heroku`
@@ -70,4 +70,4 @@ Updates the Heroku CLI (Heroku module required)
 
 -----
 
-If you encounter any errors, don't hesitate to open up an [issue](https://github.com/thielicious/HerokuSwitch/issues), thank you!
+##### If you encounter any errors, don't hesitate to open up an [issue](https://github.com/thielicious/HerokuSwitch/issues), thank you!
