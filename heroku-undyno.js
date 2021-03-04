@@ -19,8 +19,10 @@ const
 
 class HerokuUndyno {
 
-	constructor(config = null) {
-		this.config(config)
+	constructor(config) {
+		if (config != null) {
+			this.config(config)
+		}
 	}
 
 	config(config) {
@@ -54,13 +56,9 @@ class HerokuUndyno {
 					// restart the app
 					case '-restart': this.#cmd(`${h} ps:restart ${app}`); break
 					// turn on the app
-					case '-on': 
-						this.#cmd(`${heroku.maint}off ${app}`)
-							.then(this.#cmd(`${heroku.scale}1 ${app}`)); break
+					case '-on': this.#cmd(`${heroku.maint}off ${app}`).then(this.#cmd(`${heroku.scale}1 ${app}`)); break
 					// turn off the app
-					case '-off': 
-						this.#cmd(`${heroku.maint}on ${app}`)
-							.then(this.#cmd(`${heroku.scale}0 ${app}`)); break
+					case '-off': this.#cmd(`${heroku.maint}on ${app}`).then(this.#cmd(`${heroku.scale}0 ${app}`)); break
 					// look up the remaining dynos and used up resources
 					case '-dynos': this.#cmd(`${h} ps ${app}`); break
 					// update the Heroku CLI (global)
@@ -75,7 +73,7 @@ class HerokuUndyno {
 	
 	exec() {
 		if (!this.cfg.app || !this.cfg.resource) {
-			console.log('Not properly configured. Make sure you open herokuswitch.js to configure the options before.')
+			console.log('Insufficient configuration. Make sure you configured all options.')
 		} else {
 			try {
 				child_process.exec('heroku', (error, stdout, stderr) => {
