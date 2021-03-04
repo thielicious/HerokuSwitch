@@ -4,8 +4,8 @@ Activates/Deactivates an app that is deployed on the PaaS platform Heroku withou
 ### INSTALLATION<br>
 Node package manager [NPM](https://nodejs.org/en/download/) is required.
 
-1. heroku-undyno.js is working with the official [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli), install it: `npm i -g heroku`
-2. Then install un-dyno using NPM: `npm i undyno --save`
+1. `heroku-undyno.js` is working with the official [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli), install it: `npm i -g heroku`
+2. Then install `undyno` using NPM: `npm i undyno --save`
 3. Create a JavaScript file with the following content that loads and sets up the module:
 ```
 const Heroku = require('./heroku-undyno.js') // imports the module
