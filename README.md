@@ -36,7 +36,7 @@ const undyno = new HerokuUndyno(
 	resource: <'Worker' or 'web'>
 })
 ```
-**(optional)** The arguments configure the options upon creating a new instance. Configures the options used for the Heroku app. For `app` use the name of your deployed Heroku app. For `resource` chose either `Worker` or `web` for the dyno process resource. You may leave this blank and use `.config()` later on instead.
+**(optional)** The arguments configure the options upon creating a new instance. The options are used for the Heroku app. For `app` use the name of your deployed Heroku app. For `resource` chose either `Worker` or `web` for the dyno process resource type. You may leave this blank and use `.config()` later on instead.
 
 ```
 undyno.config({
