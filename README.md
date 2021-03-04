@@ -1,7 +1,7 @@
-# What is it about<br>
+### What is it about<br>
 Activates/Deactivates the app running on the PaaS Heroku in one go. 
 
-# Installation<br>
+### Installation<br>
 Node package manager [NPM](https://nodejs.org/en/download/) is required.
 
 1. undyno.js is working with the official [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli), install it: `npm i -g heroku`
@@ -19,7 +19,7 @@ undyno.exec() // executes the code together with the settings made above
 ```
 Just use the [demo](https://github.com/thielicious/HerokuSwitch/demo.js) file and configure.
 
-# USAGE<br>
+### USAGE<br>
 Assuming you created a file called `undyno.js` in the root folder of your project:<br>
 Open the terminal. The syntax is:<br>
 `node undyno -<option>`
@@ -29,7 +29,7 @@ Example: `node undyno -off`
 
 This turns off the app completely by turning on maintenance mode and deactivates the process resource (Dyno) type in one go.
 
-# METHODS<br>
+### METHODS<br>
 ```
 const undyno = new HerokuUndyno(
 	app: '<AppNameHere>',
@@ -49,7 +49,7 @@ undyno.config({
 `undyno.exec()`<br>
 *(required)* This method simply executes the code together with the configured options.
 
-# OPTIONS<br>
+### OPTIONS<br>
 `-off`<br>
 Turns off the app on Heroku by turning on maintenance mode and process resource type off.
 
