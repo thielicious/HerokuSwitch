@@ -31,7 +31,7 @@ This turns off the app completely by turning on maintenance mode and deactivates
 
 ### METHODS<br>
 ```
-const undyno = new HerokuUndyno(
+const undyno = new Heroku(
 	app: '<AppNameHere>',
 	resource: <'Worker' or 'web'>
 })
