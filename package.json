@@ -1,5 +1,5 @@
 {
-  "name": "undyno.js",
+  "name": "undyno",
   "version": "1.0.0",
   "description": "Activates/Deactivates an app running on the PaaS Heroku without wasting free dynos in one go.",
   "main": "heroku-undyno.js",
