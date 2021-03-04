@@ -1,5 +1,5 @@
 # What is it about<br>
-Activates/Deactivates an app running on the PaaS platform Heroku without wasting free dynos in one go. Less to write more to achieve. 
+Activates/Deactivates the app running on the PaaS Heroku in one go. 
 
 # Installation<br>
 Node package manager [NPM](https://nodejs.org/en/download/) is required.
@@ -17,7 +17,7 @@ const undyno = new Heroku({
 
 undyno.exec() // executes the code together with the settings made above
 ```
-Or just copy the [demo](https://github.com/thielicious/unDyno/blob/main/demo.js) file and configure.
+Just use the [demo](https://github.com/thielicious/HerokuSwitch/demo.js) file and configure.
 
 # USAGE<br>
 Assuming you created a file called `undyno.js` in the root folder of your project:<br>
@@ -28,6 +28,26 @@ Choose an option to execute it.<br>
 Example: `node undyno -off`
 
 This turns off the app completely by turning on maintenance mode and deactivates the process resource (Dyno) type in one go.
+
+# METHODS<br>
+```
+const undyno = new HerokuUndyno(
+	app: '<AppNameHere>',
+	resource: <'Worker' or 'web'>
+})
+```
+*(optional)* The arguments configure the options upon creating a new instance. Configures the options used for the Heroku app. For `app` use the name of your deployed Heroku app. For `resource` chose either `Worker` or `web` for the dyno process resource. You may leave this blank and use `.config()` later on instead.
+
+```
+undyno.config({
+	app: '<AppNameHere>',
+	resource: <'Worker' or 'web'>
+})
+```
+*(optional)* Use this method instead if you haven't set the options yet.
+
+`undyno.exec()`<br>
+*(required)* This method simply executes the code together with the configured options.
 
 # OPTIONS<br>
 `-off`<br>
