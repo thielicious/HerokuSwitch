@@ -1,7 +1,7 @@
 const Heroku = require('./heroku-undyno.js')
 
 const sw = new Heroku({
-    app: 'mihojs',
+    app: '<AppNameHere>',
     resource: 'Worker'
 })
 
