@@ -6,13 +6,13 @@ Node package manager [NPM](https://nodejs.org/en/download/) is required.
 
 1. `heroku-undyno.js` is working with the official [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli), install it: `npm i -g heroku`
 2. Then install `undyno` using NPM: `npm i undyno --save`
-3. Create a JavaScript file with the following content that loads and sets up the module:
+3. Create a JavaScript file in your project folder with the following content that loads the module:
 ```
-const Heroku = require('./heroku-undyno.js') // imports the module
+const Heroku = require('./heroku-undyno.js') 	// imports the module
 
 const undyno = new Heroku({
-    app: 'myApp', // the app's name you specified on Heroku
-    resource: 'Worker' // the process dyno type (there exist only 'Worker" or 'web')
+    app: 'myApp', 		// the app's name you specified on Heroku
+    resource: 'Worker' 		// the process dyno type (there exist only 'Worker" or 'web')
 })
 
 undyno.exec() // executes the code together with the settings made above
