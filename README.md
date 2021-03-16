@@ -9,7 +9,7 @@ Node package manager [NPM](https://nodejs.org/en/download/) is required.
 3. Then create a new NPM project and install `undyno` using NPM: `npm i undyno --save`
 4. Create a JavaScript file in your project folder with the following content:
 ```
-const Heroku = require('./heroku-undyno.js') 	// imports the module
+const Heroku = require('heroku-undyno') 	// imports the module
 
 const undyno = new Heroku({
     app: '<AppNameHere>', 		// the app's name you specified on Heroku
