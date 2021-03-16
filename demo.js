@@ -1,4 +1,4 @@
-const Heroku = require('./heroku-undyno.js')
+const Heroku = require('heroku-undyno')
 
 const sw = new Heroku({
     app: '<AppNameHere>',
